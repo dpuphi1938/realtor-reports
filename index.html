@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Reports</title>
+<style>
+  :root{
+    --red:#EE3625; --ink:#1A1A1A; --charcoal:#3A3A3A; --slate:#6B6B6B;
+    --cloud:#EDEDED; --paper:#F7F6F4; --white:#FFFFFF;
+    --bg: var(--paper); --surface: var(--white); --text: var(--ink);
+    --text-mute: var(--slate); --border: var(--cloud);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1A1A1A; --surface:#242424; --text:#F2F0EC; --text-mute:#9E9A93; --border:#333333; --red:#FF5A46; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;line-height:1.55}
+  .wrap{max-width:720px;margin:0 auto;padding:64px 32px 96px}
+  .brandbar{height:6px;background:var(--red)}
+  .eyebrow{font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--red);margin-bottom:14px}
+  h1{font-weight:800;font-size:clamp(26px,4vw,38px);letter-spacing:-.02em;margin:0 0 12px}
+  .sub{color:var(--text-mute);font-size:15px;max-width:60ch;margin:0 0 40px}
+  .report-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+  .report-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 22px;text-decoration:none;color:var(--text)}
+  .report-card:hover{border-color:var(--red)}
+  .report-addr{font-weight:700;font-size:16px}
+  .report-meta{color:var(--text-mute);font-size:13px;margin-top:4px}
+  .foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-mute)}
+</style>
+</head>
+<body>
+  <div class="brandbar"></div>
+  <div class="wrap">
+    <div class="eyebrow">@properties Christie's International Real Estate</div>
+    <h1>Client Reports</h1>
+    <p class="sub">Comparative market analyses prepared for current listings and valuations.</p>
+    <ul class="report-list">
+      <li>
+        <a class="report-card" href="5880-solomon-harmon-way/">
+          <div class="report-addr">5880 Solomon Harmon Way, Whitestown, IN</div>
+          <div class="report-meta">Comparative Market Analysis — Anson &amp; Clark Meadows comps</div>
+        </a>
+      </li>
+    </ul>
+    <div class="foot">These reports are market-positioning tools, not formal appraisals.</div>
+  </div>
+</body>
+</html>
